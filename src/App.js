@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import  NameCard from './components/NameCard'
+const tags = ['shuaige']
 
 class App extends Component {
   render() {
@@ -15,6 +17,7 @@ class App extends Component {
             r-yun zxp
           </a>
         </header>
+        <NameCard name='zxp' number={15221104634} isHuman={true} tags={tags}/>
       </div>
     );
   }

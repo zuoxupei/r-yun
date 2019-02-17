@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import  NameCard from './components/NameCard'
+import LikesButton from './components/LikesButton'
+import DigitalClock from './components/DigitalClock'
+import CommentBox from './components/CommentBox'
+
 const tags = ['shuaige']
 
 class App extends Component {
@@ -18,6 +22,9 @@ class App extends Component {
           </a>
         </header>
         <NameCard name='zxp' number={15221104634} isHuman={true} tags={tags}/>
+        <LikesButton/>
+        <DigitalClock/>
+        <CommentBox/>
       </div>
     );
   }

@@ -17,7 +17,8 @@ class CommentBox extends React.Component {
     }
 
     submitForm(event) {
-        console.log(this.state.value,this.textInout.value)
+        // console.log(this.state.value,this.textInout.value)
+        this.props.onAddComment(this.state.value)
         event.preventDefault();
     }
 
@@ -35,6 +36,7 @@ class CommentBox extends React.Component {
                     </div>
                     <button type='submit' className='btn btn-primary'>提交</button>
                 </form>
+                <p>评论的数目{this.props.commentslen}</p>
 
                 <form>
                     <div>
